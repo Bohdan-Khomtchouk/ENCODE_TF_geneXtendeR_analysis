@@ -1,0 +1,11 @@
+library(geneXtendeR)
+human<-readGFF("/hihg/smoke/dvanbooven/extender/round2/blocks/gencode.v19.annotation.gtf")
+
+peaksInput("GATA2.SH-SY5Y.bed")
+png("GATA2.SH-SY5Y.png")
+linePlot(human, 0, 10000, 500)
+dev.off()
+peaksInput("GATA3.SH-SY5Y.bed")
+png("GATA3.SH-SY5Y.png")
+linePlot(human, 0, 10000, 500)
+dev.off()

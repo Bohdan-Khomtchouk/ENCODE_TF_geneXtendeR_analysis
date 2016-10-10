@@ -1,0 +1,8 @@
+peaksInput("CTCF.HSMMtube.bed")
+png("CTCF.HSMMtube.png")
+linePlot(human, 0, 10000, 500)
+dev.off()
+peaksInput("EZH2.HSMMtube.bed")
+png("EZH2.HSMMtube.png")
+linePlot(human, 0, 10000, 500)
+dev.off()

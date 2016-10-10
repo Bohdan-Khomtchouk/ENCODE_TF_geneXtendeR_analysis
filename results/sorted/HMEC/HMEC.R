@@ -1,0 +1,8 @@
+peaksInput("CTCF.HMEC.bed")
+png("CTCF.HMEC.png")
+linePlot(human, 0, 10000, 500)
+dev.off()
+peaksInput("EZH2.HMEC.bed")
+png("EZH2.HMEC.png")
+linePlot(human, 0, 10000, 500)
+dev.off()

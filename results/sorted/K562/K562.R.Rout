@@ -1,0 +1,690 @@
+
+R version 3.3.1 (2016-06-21) -- "Bug in Your Hair"
+Copyright (C) 2016 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> library(geneXtendeR)
+Loading required package: rtracklayer
+Loading required package: GenomicRanges
+Loading required package: BiocGenerics
+Loading required package: parallel
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, cbind, colnames, do.call,
+    duplicated, eval, evalq, Filter, Find, get, grep, grepl, intersect,
+    is.unsorted, lapply, lengths, Map, mapply, match, mget, order,
+    paste, pmax, pmax.int, pmin, pmin.int, Position, rank, rbind,
+    Reduce, rownames, sapply, setdiff, sort, table, tapply, union,
+    unique, unsplit
+
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:base’:
+
+    colMeans, colSums, expand.grid, rowMeans, rowSums
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Warning messages:
+1: replacing previous import ‘data.table::between’ by ‘dplyr::between’ when loading ‘geneXtendeR’ 
+2: replacing previous import ‘data.table::last’ by ‘dplyr::last’ when loading ‘geneXtendeR’ 
+> human<-readGFF("/hihg/smoke/dvanbooven/extender/round2/blocks/gencode.v19.annotation.gtf")
+> 
+> peaksInput("ARID3A.K562.bed")
+> png("ARID3A.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("ATF1.K562.bed")
+> png("ATF1.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("ATF3.K562.bed")
+> png("ATF3.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("BACH1.K562.bed")
+> png("BACH1.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("BCL3.K562.bed")
+> png("BCL3.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("BCLAF1.K562.bed")
+> png("BCLAF1.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("BDP1.K562.bed")
+> png("BDP1.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("BHLHE40.K562.bed")
+> png("BHLHE40.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("BRF1.K562.bed")
+> png("BRF1.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("BRF2.K562.bed")
+> png("BRF2.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("CBX3.K562.bed")
+> png("CBX3.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("CCNE1.K562.bed")
+> png("CCNE1.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("CCNT2.K562.bed")
+> png("CCNT2.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("CEBPB.K562.bed")
+> png("CEBPB.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("CHD1.K562.bed")
+> png("CHD1.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("CHD2.K562.bed")
+> png("CHD2.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("CTCF.K562.bed")
+> png("CTCF.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("CTCFL.K562.bed")
+> png("CTCFL.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("E2F4.K562.bed")
+> png("E2F4.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("E2F6.K562.bed")
+> png("E2F6.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("EGR1.K562.bed")
+> png("EGR1.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("ELF1.K562.bed")
+> png("ELF1.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("ELK1.K562.bed")
+> png("ELK1.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("EP300.K562.bed")
+> png("EP300.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("ESR1.K562.bed")
+> png("ESR1.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("ETS1.K562.bed")
+> png("ETS1.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("EZH2.K562.bed")
+> png("EZH2.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("FOS.K562.bed")
+> png("FOS.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("FOSL1.K562.bed")
+> png("FOSL1.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("GABPB1.K562.bed")
+> png("GABPB1.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("GATA1.K562.bed")
+> png("GATA1.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("GATA2.K562.bed")
+> png("GATA2.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("GTF2B.K562.bed")
+> png("GTF2B.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("GTF2F1.K562.bed")
+> png("GTF2F1.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("HDAC1.K562.bed")
+> png("HDAC1.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("HDAC2.K562.bed")
+> png("HDAC2.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("HDAC6.K562.bed")
+> png("HDAC6.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("HDAC8.K562.bed")
+> png("HDAC8.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("HMGN3.K562.bed")
+> png("HMGN3.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("ILF2.K562.bed")
+> png("ILF2.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("IRF1.K562.bed")
+> png("IRF1.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("JUNB.K562.bed")
+> png("JUNB.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("JUND.K562.bed")
+> png("JUND.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("JUN.K562.bed")
+> png("JUN.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("KDM5B.K562.bed")
+> png("KDM5B.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("MAFF.K562.bed")
+> png("MAFF.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("MAFK.K562.bed")
+> png("MAFK.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("MAX.K562.bed")
+> png("MAX.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("MAZ.K562.bed")
+> png("MAZ.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("MEF2A.K562.bed")
+> png("MEF2A.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("MLL5.K562.bed")
+> png("MLL5.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("MXI1.K562.bed")
+> png("MXI1.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("MYC.K562.bed")
+> png("MYC.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("NFE2.K562.bed")
+> png("NFE2.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("NFYA.K562.bed")
+> png("NFYA.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("NFYB.K562.bed")
+> png("NFYB.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("NR2C2.K562.bed")
+> png("NR2C2.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("NR2F2.K562.bed")
+> png("NR2F2.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("NR4A1.K562.bed")
+> png("NR4A1.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("NRF1.K562.bed")
+> png("NRF1.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("PHF8.K562.bed")
+> png("PHF8.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("PML.K562.bed")
+> png("PML.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("POLR2A.K562.bed")
+> png("POLR2A.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("POLR3A.K562.bed")
+> png("POLR3A.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("POLR3G.K562.bed")
+> png("POLR3G.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("RAD21.K562.bed")
+> png("RAD21.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("RBBP5.K562.bed")
+> png("RBBP5.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("RCOR1.K562.bed")
+> png("RCOR1.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("RDBP.K562.bed")
+> png("RDBP.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("REST.K562.bed")
+> png("REST.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("RFX5.K562.bed")
+> png("RFX5.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("SAP30.K562.bed")
+> png("SAP30.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("SETDB1.K562.bed")
+> png("SETDB1.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("SIN3A.K562.bed")
+> png("SIN3A.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("SIRT6.K562.bed")
+> png("SIRT6.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("SIX5.K562.bed")
+> png("SIX5.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("SMARCA4.K562.bed")
+> png("SMARCA4.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("SMARCB1.K562.bed")
+> png("SMARCB1.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("SMC3.K562.bed")
+> png("SMC3.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("SP1.K562.bed")
+> png("SP1.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("SP2.K562.bed")
+> png("SP2.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("SPI1.K562.bed")
+> png("SPI1.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("SRF.K562.bed")
+> png("SRF.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("STAT1.K562.bed")
+> png("STAT1.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("STAT2.K562.bed")
+> png("STAT2.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("STAT5A.K562.bed")
+> png("STAT5A.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("TAF1.K562.bed")
+> png("TAF1.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("TAF7.K562.bed")
+> png("TAF7.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("TAL1.K562.bed")
+> png("TAL1.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("TBL1XR1.K562.bed")
+> png("TBL1XR1.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("TBP.K562.bed")
+> png("TBP.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("TEAD4.K562.bed")
+> png("TEAD4.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("THAP1.K562.bed")
+> png("THAP1.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("TRIM28.K562.bed")
+> png("TRIM28.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("UBTF.K562.bed")
+> png("UBTF.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("USF1.K562.bed")
+> png("USF1.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("USF2.K562.bed")
+> png("USF2.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("XRCC4.K562.bed")
+> png("XRCC4.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("YY1.K562.bed")
+> png("YY1.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("ZBTB33.K562.bed")
+> png("ZBTB33.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("ZBTB7A.K562.bed")
+> png("ZBTB7A.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("ZNF143.K562.bed")
+> png("ZNF143.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("ZNF263.K562.bed")
+> png("ZNF263.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("ZNF274.K562.bed")
+> png("ZNF274.K562.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> 
+> proc.time()
+    user   system  elapsed 
+1915.074    8.952 1944.372 

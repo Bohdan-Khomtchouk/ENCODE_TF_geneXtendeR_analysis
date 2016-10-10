@@ -1,0 +1,210 @@
+
+R version 3.3.1 (2016-06-21) -- "Bug in Your Hair"
+Copyright (C) 2016 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> library(geneXtendeR)
+Loading required package: rtracklayer
+Loading required package: GenomicRanges
+Loading required package: BiocGenerics
+Loading required package: parallel
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, cbind, colnames, do.call,
+    duplicated, eval, evalq, Filter, Find, get, grep, grepl, intersect,
+    is.unsorted, lapply, lengths, Map, mapply, match, mget, order,
+    paste, pmax, pmax.int, pmin, pmin.int, Position, rank, rbind,
+    Reduce, rownames, sapply, setdiff, sort, table, tapply, union,
+    unique, unsplit
+
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:base’:
+
+    colMeans, colSums, expand.grid, rowMeans, rowSums
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Warning messages:
+1: replacing previous import ‘data.table::between’ by ‘dplyr::between’ when loading ‘geneXtendeR’ 
+2: replacing previous import ‘data.table::last’ by ‘dplyr::last’ when loading ‘geneXtendeR’ 
+> human<-readGFF("/hihg/smoke/dvanbooven/extender/round2/blocks/gencode.v19.annotation.gtf")
+> 
+> peaksInput("ATF3.A549.bed")
+> png("ATF3.A549.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("BCL3.A549.bed")
+> png("BCL3.A549.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("BHLHE40.A549.bed")
+> png("BHLHE40.A549.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("CEBPB.A549.bed")
+> png("CEBPB.A549.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("CREB1.A549.bed")
+> png("CREB1.A549.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("CTCF.A549.bed")
+> png("CTCF.A549.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("ELF1.A549.bed")
+> png("ELF1.A549.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("EP300.A549.bed")
+> png("EP300.A549.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("ETS1.A549.bed")
+> png("ETS1.A549.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("FOSL2.A549.bed")
+> png("FOSL2.A549.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("FOXA1.A549.bed")
+> png("FOXA1.A549.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("GABPB1.A549.bed")
+> png("GABPB1.A549.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("MAX.A549.bed")
+> png("MAX.A549.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("NR3C1.A549.bed")
+> png("NR3C1.A549.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("POLR2A.A549.bed")
+> png("POLR2A.A549.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("RAD21.A549.bed")
+> png("RAD21.A549.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("REST.A549.bed")
+> png("REST.A549.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("SIN3A.A549.bed")
+> png("SIN3A.A549.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("SIX5.A549.bed")
+> png("SIX5.A549.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("TAF1.A549.bed")
+> png("TAF1.A549.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("TCF12.A549.bed")
+> png("TCF12.A549.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("USF1.A549.bed")
+> png("USF1.A549.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("YY1.A549.bed")
+> png("YY1.A549.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("ZBTB33.A549.bed")
+> png("ZBTB33.A549.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> 
+> proc.time()
+   user  system elapsed 
+494.598   3.153 506.800 

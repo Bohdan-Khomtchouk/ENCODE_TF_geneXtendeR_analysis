@@ -1,0 +1,11 @@
+library(geneXtendeR)
+human<-readGFF("/hihg/smoke/dvanbooven/extender/round2/blocks/gencode.v19.annotation.gtf")
+
+peaksInput("NFKB1.GM10847.bed")
+png("NFKB1.GM10847.png")
+linePlot(human, 0, 10000, 500)
+dev.off()
+peaksInput("POLR2A.GM10847.bed")
+png("POLR2A.GM10847.png")
+linePlot(human, 0, 10000, 500)
+dev.off()

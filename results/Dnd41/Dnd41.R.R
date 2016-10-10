@@ -1,0 +1,11 @@
+library(geneXtendeR)
+human<-readGFF("/hihg/smoke/dvanbooven/extender/round2/blocks/gencode.v19.annotation.gtf")
+
+peaksInput("CTCF.Dnd41.bed")
+png("CTCF.Dnd41.png")
+linePlot(human, 0, 10000, 500)
+dev.off()
+peaksInput("EZH2.Dnd41.bed")
+png("EZH2.Dnd41.png")
+linePlot(human, 0, 10000, 500)
+dev.off()

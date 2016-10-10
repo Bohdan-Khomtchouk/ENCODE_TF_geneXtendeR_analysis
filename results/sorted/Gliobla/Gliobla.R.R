@@ -1,0 +1,11 @@
+library(geneXtendeR)
+human<-readGFF("/hihg/smoke/dvanbooven/extender/round2/blocks/gencode.v19.annotation.gtf")
+
+peaksInput("CTCF.Gliobla.bed")
+png("CTCF.Gliobla.png")
+linePlot(human, 0, 10000, 500)
+dev.off()
+peaksInput("POLR2A.Gliobla.bed")
+png("POLR2A.Gliobla.png")
+linePlot(human, 0, 10000, 500)
+dev.off()

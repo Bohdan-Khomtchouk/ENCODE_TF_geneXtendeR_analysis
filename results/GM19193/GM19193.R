@@ -1,0 +1,8 @@
+peaksInput("NFKB1.GM19193.bed")
+png("NFKB1.GM19193.png")
+linePlot(human, 0, 10000, 500)
+dev.off()
+peaksInput("POLR2A.GM19193.bed")
+png("POLR2A.GM19193.png")
+linePlot(human, 0, 10000, 500)
+dev.off()

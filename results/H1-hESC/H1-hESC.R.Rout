@@ -1,0 +1,359 @@
+
+R version 3.3.1 (2016-06-21) -- "Bug in Your Hair"
+Copyright (C) 2016 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[Previously saved workspace restored]
+
+> library(geneXtendeR)
+Loading required package: rtracklayer
+Loading required package: GenomicRanges
+Loading required package: BiocGenerics
+Loading required package: parallel
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, cbind, colnames, do.call,
+    duplicated, eval, evalq, Filter, Find, get, grep, grepl, intersect,
+    is.unsorted, lapply, lengths, Map, mapply, match, mget, order,
+    paste, pmax, pmax.int, pmin, pmin.int, Position, rank, rbind,
+    Reduce, rownames, sapply, setdiff, sort, table, tapply, union,
+    unique, unsplit
+
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:base’:
+
+    colMeans, colSums, expand.grid, rowMeans, rowSums
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+> human<-readGFF("/hihg/smoke/dvanbooven/extender/round2/blocks/gencode.v19.annotation.gtf")
+> 
+> peaksInput("ATF2.H1-hESC.bed")
+> png("ATF2.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("ATF3.H1-hESC.bed")
+> png("ATF3.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("BACH1.H1-hESC.bed")
+> png("BACH1.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("BCL11A.H1-hESC.bed")
+> png("BCL11A.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("BRCA1.H1-hESC.bed")
+> png("BRCA1.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("CEBPB.H1-hESC.bed")
+> png("CEBPB.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("CHD1.H1-hESC.bed")
+> png("CHD1.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("CHD2.H1-hESC.bed")
+> png("CHD2.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("CTBP2.H1-hESC.bed")
+> png("CTBP2.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("CTCF.H1-hESC.bed")
+> png("CTCF.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("EGR1.H1-hESC.bed")
+> png("EGR1.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("EP300.H1-hESC.bed")
+> png("EP300.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("EZH2.H1-hESC.bed")
+> png("EZH2.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("FOSL1.H1-hESC.bed")
+> png("FOSL1.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("GABPB1.H1-hESC.bed")
+> png("GABPB1.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("GTF2F1.H1-hESC.bed")
+> png("GTF2F1.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("HDAC2.H1-hESC.bed")
+> png("HDAC2.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("JUND.H1-hESC.bed")
+> png("JUND.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("JUN.H1-hESC.bed")
+> png("JUN.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("KDM5A.H1-hESC.bed")
+> png("KDM5A.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("MAFK.H1-hESC.bed")
+> png("MAFK.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("MAX.H1-hESC.bed")
+> png("MAX.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("MXI1.H1-hESC.bed")
+> png("MXI1.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("MYC.H1-hESC.bed")
+> png("MYC.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("NANOG.H1-hESC.bed")
+> png("NANOG.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("NRF1.H1-hESC.bed")
+> png("NRF1.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("POLR2A.H1-hESC.bed")
+> png("POLR2A.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("POU5F1.H1-hESC.bed")
+> png("POU5F1.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("RAD21.H1-hESC.bed")
+> png("RAD21.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("RBBP5.H1-hESC.bed")
+> png("RBBP5.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("REST.H1-hESC.bed")
+> png("REST.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("RFX5.H1-hESC.bed")
+> png("RFX5.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("RXRA.H1-hESC.bed")
+> png("RXRA.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("SIN3A.H1-hESC.bed")
+> png("SIN3A.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("SIX5.H1-hESC.bed")
+> png("SIX5.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("SP1.H1-hESC.bed")
+> png("SP1.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("SP2.H1-hESC.bed")
+> png("SP2.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("SP4.H1-hESC.bed")
+> png("SP4.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("SRF.H1-hESC.bed")
+> png("SRF.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("SUZ12.H1-hESC.bed")
+> png("SUZ12.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("TAF1.H1-hESC.bed")
+> png("TAF1.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("TAF7.H1-hESC.bed")
+> png("TAF7.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("TBP.H1-hESC.bed")
+> png("TBP.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("TCF12.H1-hESC.bed")
+> png("TCF12.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("TEAD4.H1-hESC.bed")
+> png("TEAD4.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("USF1.H1-hESC.bed")
+> png("USF1.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("USF2.H1-hESC.bed")
+> png("USF2.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("YY1.H1-hESC.bed")
+> png("YY1.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> peaksInput("ZNF143.H1-hESC.bed")
+> png("ZNF143.H1-hESC.png")
+> linePlot(human, 0, 10000, 500)
+> dev.off()
+null device 
+          1 
+> 
+> proc.time()
+   user  system elapsed 
+585.586   3.278 593.203 

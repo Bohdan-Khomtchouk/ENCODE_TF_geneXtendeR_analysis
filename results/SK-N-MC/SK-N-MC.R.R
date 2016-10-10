@@ -1,0 +1,11 @@
+library(geneXtendeR)
+human<-readGFF("/hihg/smoke/dvanbooven/extender/round2/blocks/gencode.v19.annotation.gtf")
+
+peaksInput("FOXP2.SK-N-MC.bed")
+png("FOXP2.SK-N-MC.png")
+linePlot(human, 0, 10000, 500)
+dev.off()
+peaksInput("POLR2A.SK-N-MC.bed")
+png("POLR2A.SK-N-MC.png")
+linePlot(human, 0, 10000, 500)
+dev.off()
